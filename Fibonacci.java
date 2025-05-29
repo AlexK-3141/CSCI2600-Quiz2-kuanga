@@ -20,8 +20,11 @@ class Fibonacci {
 	public static void main(String[] argv) {
 		Fibonacci fib = new Fibonacci();
 		for (int i = 0; i <= 20; i += 1) {
-			long fibTerm = fib.getFibTerm(i);
-			System.out.println(i + "th Fibonacci term: " + fibTerm);
+			long startTime = System.currentTimeMillis();
+			long fibTerm = fib.getFibTerm(i);	    		
+			long endTime = System.currentTimeMillis();
+			long totalTime = endTime - startTime;
+			System.out.println(i + "th Fibonacci term: " + fibTerm + "; Fibonacci method elapsed time: " + totalTime + " ms");
 		}
 	}
 	
