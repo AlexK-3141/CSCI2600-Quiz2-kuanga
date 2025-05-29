@@ -19,7 +19,7 @@ class Fibonacci {
 	
 	public static void main(String[] argv) {
 		Fibonacci fib = new Fibonacci();
-		for (int i = 0; i <= 20; i += 1) {
+		for (int i = 0; i <= 30; i += 1) {
 			long startTime = System.currentTimeMillis();
 			long fibTerm = fib.getFibTerm(i);	    		
 			long endTime = System.currentTimeMillis();
